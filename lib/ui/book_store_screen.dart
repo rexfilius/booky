@@ -1,5 +1,5 @@
 import 'package:booky/data/providers/app_providers.dart';
-import 'package:booky/ui/compnents/book_store_item.dart';
+import 'package:booky/ui/components/book_store_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

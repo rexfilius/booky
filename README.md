@@ -1,16 +1,55 @@
-# booky
+# Flutter Book Reader App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+This Flutter application is a book reader that allows users to browse a collection of books, view detailed information about each title, and listen to the content read aloud. It features three main screens—BookStoreScreen, BookDetailScreen, and BookReaderScreen—and uses Riverpod for state management.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+BookStore Screen
+- Displays a grid view of books loaded from a JSON file (assets/json/bookJson.json).
+- Tapping on a book navigates to the BookDetail screen.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+BookDetail Screen
+- Shows the book's synopsis, cover image, and author information.
+- Includes a "Read" button that takes the user to the BookReader screen.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BookReader Screen
+- Offers play, pause, and stop controls for text-to-speech functionality.
+- When the play button is pressed, the app reads the book content aloud, with options to pause or stop as needed.
+
+## State Management
+The application leverages [Riverpod](https://riverpod.dev/) for state management, ensuring a scalable, testable, and maintainable codebase.
+
+## Project Structure
+```
+lib/
+├── data/
+|   ├──models/
+|   |  ├── book_reader_state.dart
+|   |  ├── book.dart
+│   ├──providers/
+|      ├──app_providers.dart
+|      ├── book_reader_notifier.dart 
+├── routes/
+│   └── app_route.dart    
+├── providers/
+│   └── book_provider.dart
+├── ui/
+|   ├──components/
+|   |  └── book_store_item.dart
+|   ├── book_store_screen.dart 
+|   ├── book_detail_screen.dart
+|   └── book_reader_screen.dart
+└──main.dart
+
+assets/
+├── images/
+└── json/
+    └── bookJson.json
+```
+
+
+
+
+
