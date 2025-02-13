@@ -35,17 +35,5 @@ class BookReaderNotifier extends Notifier<BookReaderState> {
       await state.reader.speak(state.bookContent);
       state = state.copyWith(isPlaying: true);
     }
-
-    state.reader.setStartHandler(() {
-      print('Speech has started');
-    });
-    state.reader.setCompletionHandler(() {
-      print('Speech has completed successfully');
-    });
-    state.reader.setErrorHandler((msg) {
-      print('An error occurred: $msg');
-    });
-    state.reader.setPauseHandler(() {});
-    state.reader.setContinueHandler(() {});
   }
 }

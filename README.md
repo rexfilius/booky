@@ -49,6 +49,27 @@ assets/
     └── bookJson.json
 ```
 
+## Getting Started
+
+1. Clone the repository
+2. Ensure Flutter is installed on your system
+3. Run `flutter pub get` to install dependencies
+4. Run `flutter run` to start the application
+
+## Dependencies
+
+Add the following dependencies to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^latest_version
+  flutter_riverpod: ^latest_version
+  flutter_tts: ^latest_version
+  equatable: ^latest_version
+
+```
 
 
 

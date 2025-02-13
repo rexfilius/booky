@@ -11,6 +11,7 @@ class BookStoreScreen extends ConsumerWidget {
     final bList = ref.watch(bookListProvider);
     return Scaffold(
       appBar: AppBar(
+        title: const Text('Booky - Store'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: bList.when(
