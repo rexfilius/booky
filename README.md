@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Flutter application is a book reader that allows users to browse a collection of books, view detailed information about each title, and listen to the content read aloud. It features three main screens—BookStoreScreen, BookDetailScreen, and BookReaderScreen—and uses Riverpod for state management.
+This Flutter application is a book reader that allows users to browse a collection of books, view detailed information about each title, and listen to the content read aloud. It features three main screens — BookStoreScreen, BookDetailScreen, and BookReaderScreen — and uses [Riverpod](https://riverpod.dev/)for state management.
 
 ## Features
 
@@ -17,9 +17,6 @@ BookDetail Screen
 BookReader Screen
 - Offers play, pause, and stop controls for text-to-speech functionality.
 - When the play button is pressed, the app reads the book content aloud, with options to pause or stop as needed.
-
-## State Management
-The application leverages [Riverpod](https://riverpod.dev/) for state management, ensuring a scalable, testable, and maintainable codebase.
 
 ## Project Structure
 ```
